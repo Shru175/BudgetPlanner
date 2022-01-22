@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Budget Estimation Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <script src="index.js"></script>
+            <div id="header" class="center" >
+                <h1 class="title">         Budget Planner
+                </h1>
+            </div>
+                    <table id="inputTable" class="center"  >
+                     <tr>
+                        <td ><b>
+                            Category:</b> <input type="text" id="inputCategory" value="">
+                        </td>
+                        <td><b>
+                        Amount:</b> <input type="text" id="inputValue" value="">
+                        </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+
+                            </td>
+                            <td colspan="2">
+
+                            </td>
+                            <td colspan="2">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+
+                            </td>
+                            <td colspan="2">
+
+                            </td>
+                            <td colspan="2">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                            <input type="button" class="button" onclick="addExpense(),displayFinalTable()" value="Add to expense">
+                        </td>
+                    </tr>
+
+
+</table>
+<br>
+<br>
+<br>
+<div id="finalTable"  >
+<table  border="1"   class="center" bgcolor="white" >
+    <thead>
+    <tr >
+        <td><b>Select</b> </td>
+        
+        <td id=""><b>Categories</b> </td>
+        <td> <b>Estimated Expense</b></td>
+        <td id="ids"> <b>Action</b></td>
+    </tr>
+</thead>
+<tbody id="expenseTable" class="expenseTable">
+
+    
+</tbody>
+
+
+</table>
+</div>
+
+
+
+
+
+</body>
+</html>
